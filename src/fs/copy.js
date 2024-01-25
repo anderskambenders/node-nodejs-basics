@@ -13,7 +13,7 @@ const copy = async () => {
         });
     } catch (error) {
     if (error.code === 'ERR_FS_CP_EEXIST') {
-        console.log('FS operation failed');
+        console.error('FS operation failed');
     }
     }
 };
